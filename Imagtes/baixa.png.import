@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DVD_logo.svg.png-4437542a5abda03f156f6053b4824948.stex"
+path="res://.import/baixa.png-f87fe5a6e311e5b68dba95bdb036679a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DVD_logo.svg.png"
-dest_files=[ "res://.import/DVD_logo.svg.png-4437542a5abda03f156f6053b4824948.stex" ]
+source_file="res://Imagtes/baixa.png"
+dest_files=[ "res://.import/baixa.png-f87fe5a6e311e5b68dba95bdb036679a.stex" ]
 
 [params]
 

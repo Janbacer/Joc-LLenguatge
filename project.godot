@@ -11,8 +11,8 @@ config_version=4
 [application]
 
 config/name="Per eliminar"
-run/main_scene="res://Joc.tscn"
-config/icon="res://icon.png"
+run/main_scene="res://Escenes/Joc.tscn"
+config/icon="res://Imagtes/icon.png"
 
 [input]
 

@@ -5,7 +5,7 @@ var direccio = Vector2(0,0)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	rotation_degrees = 0
-	position = Vector2(150,250)
+	position = Vector2(70,70)
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -19,7 +19,7 @@ func _process(delta):
 	if Input.is_action_pressed("mou adalt"):
 		direccio += Vector2.UP
 	
-	position += direccio.normalized() * velocitat * delta 
+	position += direccio.normalized() * velocitat * delta * 2
 	direccio = Vector2.ZERO
 	
 #	position += velocitat * delta 
@@ -32,6 +32,9 @@ func _process(delta):
 #	if position.y < 20:
 #		velocitat.y = -velocitat.y
 func _on_Personatge_area_entered(area):
-	modulate = Color(2,0,0)
+	modulate = Color(1,1,1)
+	pass
 	
-
+func _on_Personatge_area_exited(area):
+	modulate = Color(0,0,1)
+	position = Vector2(500,300)
