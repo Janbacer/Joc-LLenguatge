@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/boxItem_boxed.png-b57bc5e87b42c9e3cfa49d56a68394ef.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://platformer-pack-redux-360-assets/PNG/Tiles/boxItem_boxed.png"
+dest_files=[ "res://.import/boxItem_boxed.png-b57bc5e87b42c9e3cfa49d56a68394ef.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
