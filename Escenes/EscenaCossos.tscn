@@ -1,25 +1,28 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Escenes/Terra.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Escenes/KinematicBody2D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Escenes/portal.tscn" type="PackedScene" id=3]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Terra" parent="." instance=ExtResource( 1 )]
-position = Vector2( -227, 455 )
-
-[node name="Terra2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 119, 362 )
-
-[node name="Terra3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 534, 182 )
-
-[node name="Terra4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 40, 125 )
-
-[node name="Terra5" parent="." instance=ExtResource( 1 )]
-position = Vector2( -1890, 609 )
-scale = Vector2( 7.5, 1 )
-
 [node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
 scale = Vector2( 0.3, 0.3 )
+
+[node name="Terra" parent="." instance=ExtResource( 1 )]
+position = Vector2( 166, 454 )
+
+[node name="Terra2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 831, 358 )
+
+[node name="Terra3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 168, 209 )
+
+[node name="Terra4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 520, 571 )
+
+[node name="Terra5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 816, 79 )
+
+[node name="Area2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 851, 27 )

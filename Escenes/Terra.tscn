@@ -6,14 +6,11 @@
 extents = Vector2( 264, 22 )
 
 [node name="Terra" type="StaticBody2D"]
-position = Vector2( 4, 353 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 318, 15 )
 scale = Vector2( 0.205607, 0.205607 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 318, 15 )
 scale = Vector2( 0.25, 1 )
 shape = SubResource( 1 )
