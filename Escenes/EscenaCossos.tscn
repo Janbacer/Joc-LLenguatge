@@ -22,4 +22,6 @@ position = Vector2( 269, 138 )
 position = Vector2( 513, 574 )
 
 [node name="Area2D" parent="." instance=ExtResource( 3 )]
-position = Vector2( 722, 45 )
+position = Vector2( 100, 93 )
+
+[connection signal="body_entered" from="Area2D" to="KinematicBody2D" method="_on_Area2D_body_entered"]

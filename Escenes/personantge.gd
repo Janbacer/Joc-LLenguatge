@@ -26,7 +26,7 @@ func _physics_process(delta):
 	velocitat += gravetat * delta
 	velocitat = move_and_slide(velocitat, Vector2.UP)
 	
-	if position.y > 800:
+	if position.y > 700:
 		position = Vector2(500,400)
 		velocitat.y = 100
 	
@@ -44,3 +44,7 @@ func anima(velocitat: Vector2):
 		animacio.play("quiet")
 	if velocitat.y < -1:
 		animacio.play("salta")
+
+
+func _on_Area2D_body_entered(body):
+	modulate = Color(10,10,10)
