@@ -10,19 +10,16 @@
 scale = Vector2( 0.3, 0.3 )
 
 [node name="Terra" parent="." instance=ExtResource( 1 )]
-position = Vector2( 166, 454 )
+position = Vector2( 210, 363 )
 
 [node name="Terra2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 831, 358 )
+position = Vector2( 728, 284 )
 
 [node name="Terra3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 168, 209 )
+position = Vector2( 269, 138 )
 
 [node name="Terra4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 520, 571 )
-
-[node name="Terra5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 816, 79 )
+position = Vector2( 513, 574 )
 
 [node name="Area2D" parent="." instance=ExtResource( 3 )]
-position = Vector2( 851, 27 )
+position = Vector2( 722, 45 )

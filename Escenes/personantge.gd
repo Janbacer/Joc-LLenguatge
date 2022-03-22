@@ -26,8 +26,9 @@ func _physics_process(delta):
 	velocitat += gravetat * delta
 	velocitat = move_and_slide(velocitat, Vector2.UP)
 	
-	if position.y > 600:
+	if position.y > 800:
 		position = Vector2(500,400)
+		velocitat.y = 100
 	
 	anima(velocitat)
 	
