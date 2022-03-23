@@ -7,7 +7,7 @@ var salt = Vector2.UP *550
 var salts_disponibles = 0
 
 func _ready():
-	position = Vector2(500,400)
+	pass
 	
 func _physics_process(delta):
 	velocitat.x = 0
@@ -26,9 +26,8 @@ func _physics_process(delta):
 	velocitat += gravetat * delta
 	velocitat = move_and_slide(velocitat, Vector2.UP)
 	
-	if position.y > 700:
-		position = Vector2(500,400)
-		velocitat.y = 100
+	if position.y > 900:
+		get_tree().reload_current_scene()
 	
 	anima(velocitat)
 	
@@ -47,4 +46,6 @@ func anima(velocitat: Vector2):
 
 
 func _on_Area2D_body_entered(body):
-	modulate = Color(10,10,10)
+	position = Vector2(100,500)
+	get_tree().change_scene("res://Escenes/Escena 2.tscn")
+	

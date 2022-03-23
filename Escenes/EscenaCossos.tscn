@@ -1,13 +1,21 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Escenes/Terra.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Escenes/KinematicBody2D.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Escenes/portal.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Escenes/Lava.tscn" type="PackedScene" id=4]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 513, 447 )
 scale = Vector2( 0.3, 0.3 )
+
+[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+current = true
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
 
 [node name="Terra" parent="." instance=ExtResource( 1 )]
 position = Vector2( 210, 363 )
@@ -22,6 +30,9 @@ position = Vector2( 269, 138 )
 position = Vector2( 513, 574 )
 
 [node name="Area2D" parent="." instance=ExtResource( 3 )]
-position = Vector2( 100, 93 )
+position = Vector2( 90, -78 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 562, 955 )
 
 [connection signal="body_entered" from="Area2D" to="KinematicBody2D" method="_on_Area2D_body_entered"]

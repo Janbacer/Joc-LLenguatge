@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="Per eliminar"
+config/name="Joc Jan"
 run/main_scene="res://Escenes/EscenaCossos.tscn"
 config/icon="res://Imagtes/icon.png"
 

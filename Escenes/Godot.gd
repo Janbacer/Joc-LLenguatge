@@ -33,7 +33,7 @@ func _process(delta):
 #		velocitat.y = -velocitat.y
 func _on_Personatge_area_entered(area):
 	modulate = Color(1,1,1)
-	pass
+	
 	
 func _on_Personatge_area_exited(area):
 	modulate = Color(0,0,1)
