@@ -2,11 +2,16 @@
 
 importer="texture"
 type="StreamTexture"
-valid=false
+path="res://.import/white.jpg-16378c62b931b2d5c1ec88f0d63af0bd.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://Imagtes/portal.png"
+source_file="res://Imagtes/white.jpg"
+dest_files=[ "res://.import/white.jpg-16378c62b931b2d5c1ec88f0d63af0bd.stex" ]
+
 [params]
 
 compress/mode=0

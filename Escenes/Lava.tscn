@@ -1,10 +1,18 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Imagtes/white.jpg" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 2888.5, 72.75 )
+extents = Vector2( 3470, 57.5 )
 
-[node name="StaticBody2D" type="StaticBody2D"]
+[node name="Area2D" type="Area2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 63.25 )
+position = Vector2( -28, -0.5 )
 shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.952941, 0.0392157, 0.0392157, 0.219608 )
+position = Vector2( 10.2499, 0 )
+scale = Vector2( 21.9234, 0.638889 )
+texture = ExtResource( 1 )

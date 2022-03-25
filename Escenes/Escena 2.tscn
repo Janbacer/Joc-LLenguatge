@@ -1,44 +1,21 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Escenes/Terra.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Escenes/KinematicBody2D.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Escenes/Escena 2.gd" type="Script" id=3]
-[ext_resource path="res://Escenes/Lava.tscn" type="PackedScene" id=4]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 89, 488 )
+position = Vector2( 228, 296 )
 scale = Vector2( 0.3, 0.3 )
 
 [node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+position = Vector2( -760, -986.667 )
+scale = Vector2( 3.33333, 3.33333 )
+offset = Vector2( 0, -190 )
 current = true
-
-[node name="Terra" parent="." instance=ExtResource( 1 )]
-position = Vector2( 89, 549 )
-
-[node name="Terra2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1469, 0 )
-
-[node name="Terra3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 317, 466 )
-
-[node name="Terra4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1243, 86 )
-
-[node name="Terra5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1000, 158 )
-
-[node name="Terra6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 770, 253 )
-
-[node name="Terra7" parent="." instance=ExtResource( 1 )]
-position = Vector2( 551, 360 )
-
-[node name="Terra8" parent="." instance=ExtResource( 1 )]
-position = Vector2( 0, 506 )
-rotation = 1.5708
-
-[node name="StaticBody2D" parent="." instance=ExtResource( 4 )]
-position = Vector2( 600, 990 )
+limit_top = 188
+limit_bottom = 600
+limit_smoothed = true
+drag_margin_h_enabled = true

@@ -2,5 +2,5 @@ extends Node2D
 
 
 func _ready():
-	$KinematicBody2D.gravetat *= 1.8
+	$KinematicBody2D.gravetat *= 0.7
 	
