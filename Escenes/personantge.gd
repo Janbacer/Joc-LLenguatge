@@ -5,6 +5,7 @@ var velocitat = Vector2.ZERO
 var gravetat = Vector2.DOWN * 2000
 var salt = Vector2.UP *550
 var salts_disponibles = 0
+var pantalla = 1
 
 func _ready():
 	velocitat.y = -200
@@ -26,9 +27,11 @@ func _physics_process(delta):
 	velocitat += gravetat * delta
 	velocitat = move_and_slide(velocitat, Vector2.UP)
 	
-	if position.y > 500:
+	if position.y > 500 and pantalla == 1:
 		get_tree().reload_current_scene()
-	
+	if position.y > 4500 and pantalla == 2:
+		get_tree().reload_current_scene()
+		
 	anima(velocitat)
 	
 func anima(velocitat: Vector2):
