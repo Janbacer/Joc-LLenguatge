@@ -12,6 +12,7 @@ position = Vector2( 0, 800 )
 rotation = 1.5708
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 1 )
+flip_h = true
 
 [node name="Background4" type="Sprite" parent="."]
 position = Vector2( 0, 1600 )
